@@ -1,0 +1,15 @@
+{
+  "name": "project-generator-ai",
+  "version": "1.0.0",
+  "description": "Desktop audit tool for frontend projects",
+  "main": "electron/main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "@babel/parser": "^7.28.4",
+    "electron": "^38.0.0",
+    "fs-extra": "^11.3.0"
+  }
+}
