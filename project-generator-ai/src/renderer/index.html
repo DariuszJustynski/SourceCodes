@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt Generator AI</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Projekt Generator AI</h1>
+
+      <label for="projectPath">Ścieżka projektu frontendowego</label>
+      <input id="projectPath" type="text" placeholder="np. /workspace/SourceCodes/my-frontend" />
+
+      <label for="specText">Dokumentacja techniczna</label>
+      <textarea id="specText" rows="10" placeholder="Wklej dokumentację...\nNp: HomePage, OffersPage, endpoint /api/offers"></textarea>
+
+      <div class="actions">
+        <label class="checkbox-row">
+          <input id="frontendOnly" type="checkbox" checked />
+          Frontend only (blokuj /api/)
+        </label>
+        <button id="runAuditBtn">RUN AUDIT</button>
+      </div>
+
+      <div id="status" class="status"></div>
+
+      <section>
+        <h2>Wynik audytu</h2>
+        <pre id="results"></pre>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
